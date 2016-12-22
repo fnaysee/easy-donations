@@ -21,8 +21,8 @@ Easy Donations lets you receive doations from your visitors. ability to add fiel
 <li>Ability to set background for the form</li>
 <li>Ability to choose currency</li>
 <li>Ability to load users styles</li>
-<li>ُShortCode to call the form within posts and pages</li>
-<li>ُWidget to show the form in your sidebar</li>
+<li>ShortCode to call the form within posts and pages</li>
+<li>Widget to show the form in your sidebar</li>
 <li>Full ltr and rtl support</li>
 </ol>
 
@@ -30,8 +30,7 @@ Easy Donations lets you receive doations from your visitors. ability to add fiel
 <ol>
 <li>PerfectMoney (international)</li>
 <li>Pardakhtpal (iran)</li>
-<li>IslandPay (iran)</li>
-<li>Payline (iran) </li>
+<li>Pardakhtshahr (iran)</li>
 </ol>
 
 افزونه ای جهت دریافت حمایت مالی در وردپرس .
@@ -39,7 +38,7 @@ Easy Donations lets you receive doations from your visitors. ability to add fiel
 توسط این افزونه به راحتی می توانید از کاربرانتان وجوه تعیین شده و یا حمایت مالی را دریافت نمایید.
 توسط شورت کد افزونه و تابع فراخوان فرم می توانید فرم را در هر مکانی از وب سایتتان نمایش دهید.
 
-    درگاه های موجود در افزونه: پی لاین، پرداخت پال ،ایسلند پی  و پرفکت مانی
+    درگاه های موجود در افزونه: پرداخت پال ،شهر پرداخت  و پرفکت مانی
 
 == Changelog ==
 1.3.3

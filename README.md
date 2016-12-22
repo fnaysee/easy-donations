@@ -42,6 +42,7 @@ Easy Donations lets you receive doations from your visitors. ability to add fiel
     درگاه های موجود در افزونه: پرداخت پال ،شهر پرداخت  و پرفکت مانی
 
 == Changelog ==
+
 1.3.3
 <ul>
 <li>Fixed bug return url for some websites</li>

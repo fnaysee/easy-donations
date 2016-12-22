@@ -36,6 +36,11 @@ Plugin is ideal for those who need a simple editable payment form.
     
 ## Changelog
 
+###1.4
+
+* New features added
+* Blockchain gateway added
+
 ###1.3.3
 <ul>
 <li>Fixed bug return url for some websites</li>

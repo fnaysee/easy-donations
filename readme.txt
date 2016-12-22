@@ -11,15 +11,17 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 == Description ==
 <h5>Easily receive Donations in your wordpress website</h5>
 <br />
-Easy Donations lets you receive doations from your visitors. ability to add field choose amount type currency and background image for form are few of the plugin features.
+Easy Donations lets you receive doations from your visitors.
+Plugin designed for those who need a simple form to receive money from their visitors. For more complex form maker systems you may use sth like gravityforms or quforms.
 <br />
 
+<br />
 <h5>Features:</h5>
 <ol>
 <li>Ability to add fields to the form</li>
-<li>Ability to set default donate prices</li>
+<li>Ability to set default donate prices or let user enter the value</li>
 <li>Ability to set background for the form</li>
-<li>Ability to choose currency</li>
+<li>Ability to choose currency or tell the plugin to use the defined currency on field</li>
 <li>Ability to load users styles</li>
 <li>ShortCode to call the form within posts and pages</li>
 <li>Widget to show the form in your sidebar</li>
@@ -41,6 +43,13 @@ Easy Donations lets you receive doations from your visitors. ability to add fiel
     درگاه های موجود در افزونه: پرداخت پال ،شهر پرداخت  و پرفکت مانی
 
 == Changelog ==
+
+1.4
+<ul>
+<li>New features added (Form is now more flexible)</li>
+<li>Removed old non working gateways</li>
+</ul>
+
 1.3.3
 <ul>
 <li>Fixed bug return url for some websites</li>

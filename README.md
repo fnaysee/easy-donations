@@ -1,14 +1,5 @@
 # easy-donations
 
-Contributors: wp-src.ir Team
-Tags: donate, donation, حمایت, حمایت مالی, payment, gateway,form
-Donate link: wp-src.ir
-Requires at least: wordpress 3.5
-Tested up to: 4.6.1
-Stable tag: 1.0
-License: GPLv3
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
-
 ## Description
 <h5>Easily receive Donations in your wordpress website</h5>
 <br />
@@ -16,26 +7,25 @@ Easy Donations lets you receive doations from your visitors. ability to add fiel
 <br />
 
 ##Features:
-<ol>
-<li>Ability to add fields to the form</li>
-<li>Ability to set default donate prices</li>
-<li>Ability to set background for the form</li>
-<li>Ability to choose currency</li>
-<li>Ability to load users styles</li>
-<li>ُShortCode to call the form within posts and pages</li>
-<li>ُWidget to show the form in your sidebar</li>
-<li>Full ltr and rtl support</li>
-</ol>
 
-<h5>Included Gateways:</h5>
-<ol>
-<li>PerfectMoney (international)</li>
-<li>Pardakhtpal (iran)</li>
-<li>Pardakhtshahr (iran)</li>
-</ol>
+1. Ability to add fields to the form
+2. Ability to set default donate prices
+3. Ability to set background for the form
+4. Ability to choose currency
+5. Ability to load users styles
+6. ShortCode to call the form within posts and pages
+7. Widget to show the form in your sidebar
+8. Full ltr and rtl support
+
+## Included Gateways:
+
+1. PerfectMoney (international)
+2. Pardakhtpal (iran)
+3. Pardakhtshahr (iran)
+
 
 افزونه ای جهت دریافت حمایت مالی در وردپرس .
-<br>
+
 توسط این افزونه به راحتی می توانید از کاربرانتان وجوه تعیین شده و یا حمایت مالی را دریافت نمایید.
 توسط شورت کد افزونه و تابع فراخوان فرم می توانید فرم را در هر مکانی از وب سایتتان نمایش دهید.
 
@@ -98,6 +88,26 @@ or after downloading the plugin go to wordpress dashboard and navigate to plugin
 
 ### HOW TO USE
 <li>Call the plugin short code into your pages or call its function in any place at your theme files.</li>
+
+
+
+## About
+
+Contributors: wp-src.ir Team
+
+Tags: donate, donation, حمایت, حمایت مالی, payment, gateway,form
+
+Donate link: wp-src.ir
+
+Requires at least: wordpress 3.5
+
+Tested up to: 4.6.1
+
+Stable tag: 1.0
+
+License: GPLv3
+
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 ## FAQ
 

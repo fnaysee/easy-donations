@@ -1,10 +1,13 @@
 # easy-donations
 
 ## Description
-<h5>Easily receive Donations in your wordpress website</h5>
-<br />
-Easy Donations lets you receive doations from your visitors. ability to add field choose amount type currency and background image for form are few of the plugin features.
-<br />
+<h3>Easily receive Donations in your wordpress website</h3>
+
+Easy Donations lets you receive doations from your visitors.
+
+This plugin only has a single form which can be called by its shortcode in any page of a wordpress site.
+
+Plugin is ideal for those who need a simple editable payment form.
 
 ##Features:
 

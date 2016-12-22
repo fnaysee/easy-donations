@@ -86,16 +86,17 @@ Easy Donations lets you receive doations from your visitors. ability to add fiel
 </ul>
 
 ## Installation
-<strong>HOW TO INSTALL</strong>
+
+### HOW TO INSTALL
 <li>extratc plugin files</li>
 <li>copy folder easy-donations into wordpress plugins folder which is located in : yourdomain/wp-content/plugins
 or after downloading the plugin go to wordpress dashboard and navigate to plugins > installed plugins , then from top click Add New button , in next page press upload , select the file and press Install Now.</li>
 
-<strong>HOW TO ACTIVATE</strong>
+### HOW TO ACTIVATE
 <li>go to wordpress dashboard and navigate to plugins > installed plugins , from tab All or Inactive find the "Easy Donations" and below the title press Activate.</li>
 <li>wait until wordpress shows a box containing plugin activated.</li>
 
-<strong>HOW TO USE</strong>
+### HOW TO USE
 <li>Call the plugin short code into your pages or call its function in any place at your theme files.</li>
 
 ## FAQ

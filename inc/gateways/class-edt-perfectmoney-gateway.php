@@ -109,7 +109,7 @@ function run_edt_pm_gateway() {
                     || ! isset( $_POST['PAYMENT_UNITS'] ) || ! isset( $_POST['PAYMENT_BATCH_NUM'] ) || ! isset( $_POST['PAYER_ACCOUNT'] )
                     || ! isset( $_POST['TIMESTAMPGMT'] ) || ! isset( $_POST['V2_HASH'] ) ) {
                     $this->add_message( __( 'Your Transaction Was Failed. You Can Try Paying Again.', EDT_TEXT_DOMAIN ), 'error' );
-                    edt_ins()->payment->complete_payment( $payment, 'completed', $_POST['PAYMENT_BATCH_NUM'] . ' Payer Acc: ' . $_POST['PAYER_ACCOUNT'] );
+                    edt_ins()->payment->complete_payment( $payment, 'failed');
                     header( "Location:" . $payment['pay_url'] );       
                     die(); 
                 }
@@ -131,7 +131,7 @@ function run_edt_pm_gateway() {
                 }
                 else{
                     $this->add_message( __( 'Your Transaction Was Failed. You Can Try Paying Again.', EDT_TEXT_DOMAIN ), 'error' );
-                    edt_ins()->payment->complete_payment( $payment, 'completed', $_POST['PAYMENT_BATCH_NUM'] . ' Payer Acc: ' . $_POST['PAYER_ACCOUNT'] );
+                    edt_ins()->payment->complete_payment( $payment, 'failed', $_POST['PAYMENT_BATCH_NUM'] . ' Payer Acc: ' . $_POST['PAYER_ACCOUNT'] );
                     header( "Location:" . $payment['pay_url'] );       
                     die(); 
                 }

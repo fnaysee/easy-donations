@@ -1,0 +1,166 @@
+﻿#edt-form-wrap {
+    display: block;
+    padding: 20px;
+}
+
+.easy-donations-form {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 4px #fff;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+#edt-form-wrap .form-custom-field {
+    display: table;
+    padding: 15px 0;
+    width: 100%;
+}
+
+#edt-form-wrap label {
+    margin-bottom: 10px;
+}
+
+#edt-form-wrap .edt-title {
+    color: #000;
+    display: table-cell;
+    font-weight: bold;
+    margin-top: 5px;
+    vertical-align: middle;
+    width: 130px;
+}
+
+#edt-form-wrap input {
+    border-radius: 4px;
+}
+
+#edt-form-wrap textarea {
+    margin-bottom: 10px;
+    width: 180px;
+}
+
+#edt-form-wrap .the-fields {
+    display: table-cell;
+}
+
+    #edt-form-wrap .the-fields input {
+        width: 130px;
+        border: 1px solid #ccc;
+    }
+
+        #edt-form-wrap .the-fields input[type=text] {
+            width: 80%;
+            border: 1px solid #ccc;
+        }
+
+        #edt-form-wrap .the-fields input:focus {
+            box-shadow: 0px 0px 3px #0DA6CF;
+        }
+
+#edt-form-wrap input, #edt-form-wrap textarea {
+    background-color: rgba(255, 255, 255, 0.62);
+}
+
+#edt-form-wrap .symbol {
+    margin: 0 3px;
+}
+
+.gateway-title {
+    font-weight: bold;
+}
+
+#edt-form-wrap .gateway-item {
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+    #edt-form-wrap .gateway-item input {
+        margin-left: 10px;
+    }
+
+#edt-form-wrap .pay-btn {
+    margin-top: 20px;
+}
+
+#edt-form-wrap input.donate-form-submit {
+    background-color: rgb(13, 166, 207);
+    background-image: none;
+    box-shadow: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    font-size: 20px;
+    margin: 0px auto;
+    min-width: 150px;
+}
+
+#edt-form-wrap .donate-form-submit:hover {
+    background: transparent -moz-linear-gradient(center top, rgb(66, 192, 226) 0px, rgb(13, 166, 207) 100%) repeat scroll 0% 0% !important;
+}
+
+#edt-form-wrap .edt_messages {
+    margin-bottom: 10px;
+}
+
+    #edt-form-wrap .edt_messages .error, #edt-form-wrap .edt_messages .updated {
+        display: block;
+        padding: 2px 4px;
+        margin-bottom: 2px;
+        background-color: rgba(255, 255, 255, 0.62);
+    }
+
+    #edt-form-wrap .edt_messages .error {
+        border-left: 2px solid rgb(170, 73, 73);
+    }
+
+    #edt-form-wrap .edt_messages .updated {
+        border-left: 2px solid rgb(71, 170, 145);
+    }
+
+#edt-form-wrap.rtl .edt_messages .error, .rtl #edt-form-wrap .edt_messages .error {
+    border-right: 2px solid rgb(170, 73, 73);
+    border-left:none;
+}
+
+#edt-form-wrap.rtl .edt_messages .updated, .rtl #edt-form-wrap .edt_messages .updated {
+    border-right: 2px solid rgb(71, 170, 145);
+    border-left:none;
+}
+
+.amount-field {
+    margin: 15px 0;
+}
+
+#edt-form-wrap .the-fields .amount-text-field {
+    width: 60px;
+}
+
+.donate-prices {
+    width: 100%;
+    display: inline-block;
+}
+
+    .donate-prices input {
+        margin-left: 5px;
+    }
+
+    .donate-prices .currency {
+        margin-right: 3px;
+    }
+
+@media (max-width: 700px) {
+    #edt-form-wrap {
+        padding: 0px;
+    }
+
+    .easy-donations-form {
+        width: auto;
+    }
+
+    #edt-form-wrap .edt-title, #edt-form-wrap .the-fields, #edt-form-wrap .the-fields input[type=text] {
+        display: block;
+        width: 100%;
+    }
+}

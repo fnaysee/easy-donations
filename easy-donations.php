@@ -110,8 +110,9 @@ if( !class_exists('Easy_Donations') ){
             include_once $dir . 'inc/widgets/class-easy-donations-widgets.php';
             //Default Gateways
             include_once $dir . 'inc/gateways/class-edt-pardakhtpal-gateway.php';
-			include_once $dir . 'inc/gateways/class-edt-pardakhtshahr-gateway.php';
             include_once $dir . 'inc/gateways/class-edt-perfectmoney-gateway.php';
+			include_once $dir . 'inc/gateways/class-edt-pardakhtshahr-gateway.php';
+            include_once $dir . 'inc/gateways/class-edt-blockchain-gateway.php';
             include_once $dir . 'inc/class-easy-donations-admin-general.php';
             //for admins
             if( is_admin() ) {

@@ -4,7 +4,7 @@
  * Plugin General Options
  * 
  * @class Easy_Donations_Settings
- * @version 1.0
+ * @version 1.1
  */
 class Easy_Donations_Admin_General extends Easy_Donations_Settings {
     
@@ -12,7 +12,7 @@ class Easy_Donations_Admin_General extends Easy_Donations_Settings {
      * Holds class version
      * @var string
      */
-    const version = '1.0';
+    const version = '1.1';
     
     public static $registered_fields = array();
     
@@ -275,13 +275,18 @@ class Easy_Donations_Admin_General extends Easy_Donations_Settings {
         <div class="amount-price-block">
         <?php foreach( $fixed_prices as $fp => $val ) {
                    ?>
-            <div class="custome-amount-field">
+            <div class="custom-amount-field">
                 <input class="amount-field-id" type="hidden" name="<?php echo $this->settings_name; ?>[donate_form_amount_field][fixed][<?php echo $val['name']; ?>][id]" value="<?php echo $val['id']; ?>">
                 <input class="amount-field-name" type="hidden" name="<?php echo $this->settings_name; ?>[donate_form_amount_field][fixed][<?php echo $val['name']; ?>][name]" value="<?php echo $val['name']; ?>">
                 <input class="amount-field-type" type="hidden" name="<?php echo $this->settings_name; ?>[donate_form_amount_field][fixed][<?php echo $val['name']; ?>][type]" value="radio">
 
                 <label for="<?php echo $val['id']; ?>" class="amount-field-value-label"><?php _e( 'Amount', EDT_TEXT_DOMAIN ); ?></label>
                 <input id="<?php echo $val['id']; ?>" class="amount-field-value" type="text" name="<?php echo $this->settings_name; ?>[donate_form_amount_field][fixed][<?php echo $val['name']; ?>][value]" style="width:50px;" value="<?php echo $val['value']; ?>">
+                <input id="" class="amount-field-symbol" type="text" name="<?php echo $this->settings_name; ?>[donate_form_amount_field][fixed][<?php echo $val['name']; ?>][symbol]" placeholder="<?php _e( 'Symbol (optional)', EDT_TEXT_DOMAIN ); ?>" value="<?php echo(isset($val['symbol'])? $val['symbol'] : '' ); ?>">
+                <input id="" class="amount-field-description" type="text" name="<?php echo $this->settings_name; ?>[donate_form_amount_field][fixed][<?php echo $val['name']; ?>][des]" placeholder="<?php _e( 'Description (optional)', EDT_TEXT_DOMAIN ); ?>" value="<?php echo(isset($val['des'])? $val['des'] : '' ); ?>">
+
+                <input id="<?php echo $val['id']; ?>-show-currency" class="amount-field-show-currency" type="checkbox" name="<?php echo $this->settings_name; ?>[donate_form_amount_field][fixed][<?php echo $val['name']; ?>][show-currency]" <?php echo ( isset( $val['show-currency'] )? 'checked="checked"' : '' );  ?> />
+                <label for="<?php echo $val['id']; ?>-show-currency" class="amount-field-show-currency-label"><?php _e( 'Show global currency ?', EDT_TEXT_DOMAIN ); ?></label>
                 
                 <input type="button" class="button remove-field" name="submit" value="" title="<?php _e( 'Remove price', EDT_TEXT_DOMAIN ); ?>" style="font-family:dashicons;font-size:20px;" />
             </div>
@@ -300,7 +305,12 @@ class Easy_Donations_Admin_General extends Easy_Donations_Settings {
         <input class="amount-field-type" type="hidden" name="" value="radio">
         
         <label for="" class="amount-field-value-label"><?php _e( 'Amount', EDT_TEXT_DOMAIN ); ?></label>
-        <input id="" class="amount-field-value" type="text" name="" style="width:50px;" value="">
+        <input id="" class="amount-field-value" type="text" name="" value="" placeholder="<?php _e( 'Amount (Required)', EDT_TEXT_DOMAIN ); ?>">
+        <input id="" class="amount-field-symbol" type="text" name="" placeholder="<?php _e( 'Symbol (optional)', EDT_TEXT_DOMAIN ); ?>" value="">
+        <input id="" class="amount-field-des" type="text" name="" placeholder="<?php _e( 'Description (optional)', EDT_TEXT_DOMAIN ); ?>" value="">
+
+        <input id="amount-field-show-currency" class="amount-field-show-currency" type="checkbox" name="" />
+        <label for="amount-field-show-currency" class="amount-field-show-currency-label"><?php _e( 'Show global currency ?', EDT_TEXT_DOMAIN ); ?></label>
         
         <input type="button" class="button remove-field" name="submit" value="" title="<?php _e( 'Remove price', EDT_TEXT_DOMAIN ); ?>" style="font-family:dashicons;font-size:20px;" />
     </div>

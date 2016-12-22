@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Easy Donations 1.0\n"
-"POT-Creation-Date: 2015-11-08 20:43+0330\n"
-"PO-Revision-Date: 2015-11-08 20:43+0330\n"
+"POT-Creation-Date: 2016-10-20 00:07+0330\n"
+"PO-Revision-Date: 2016-10-20 00:45+0330\n"
 "Last-Translator: aaa <a@a.a>\n"
 "Language-Team: wp-src\n"
 "Language: fa_IR\n"
@@ -192,493 +192,512 @@ msgid "Fixed value(s)"
 msgstr "مقادیر ثابت"
 
 #: ../inc/class-easy-donations-admin-general.php:283
-#: ../inc/class-easy-donations-admin-general.php:302
+#: ../inc/class-easy-donations-admin-general.php:307
 #: ../inc/class-easy-donations-admin-payments-list.php:83
-#: ../inc/class-easy-donations-form.php:129
+#: ../inc/class-easy-donations-form.php:134
 msgid "Amount"
 msgstr "مبلغ"
 
+#: ../inc/class-easy-donations-admin-general.php:285
+#: ../inc/class-easy-donations-admin-general.php:309
+msgid "Symbol (optional)"
+msgstr "نماد واحد (اختیاری)"
+
 #: ../inc/class-easy-donations-admin-general.php:286
-#: ../inc/class-easy-donations-admin-general.php:305
+#: ../inc/class-easy-donations-admin-general.php:310
+msgid "Description (optional)"
+msgstr "توضیحات (اختیاری)"
+
+#: ../inc/class-easy-donations-admin-general.php:289
+#: ../inc/class-easy-donations-admin-general.php:313
+msgid "Show global currency ?"
+msgstr "نمایش نماد پول عمومی"
+
+#: ../inc/class-easy-donations-admin-general.php:291
+#: ../inc/class-easy-donations-admin-general.php:315
 msgid "Remove price"
 msgstr "حذف قیمت"
 
-#: ../inc/class-easy-donations-admin-general.php:290
+#: ../inc/class-easy-donations-admin-general.php:295
 msgid "Add Amount"
 msgstr "افزودن مبلغ"
 
-#: ../inc/class-easy-donations-admin-general.php:294
+#: ../inc/class-easy-donations-admin-general.php:299
 msgid "Typed by user"
 msgstr "به انتخاب کاربر"
 
-#: ../inc/class-easy-donations-admin-general.php:327
+#: ../inc/class-easy-donations-admin-general.php:308
+msgid "Amount (Required)"
+msgstr "مبلغ (الزامی)"
+
+#: ../inc/class-easy-donations-admin-general.php:337
 msgid "Select Background"
 msgstr "انتخاب تصویر"
 
-#: ../inc/class-easy-donations-admin-general.php:328
+#: ../inc/class-easy-donations-admin-general.php:338
 msgid "Reset Background"
 msgstr "حذف تصویر"
 
-#: ../inc/class-easy-donations-admin-general.php:357
+#: ../inc/class-easy-donations-admin-general.php:367
 msgid "Submit"
 msgstr "تایید"
 
-#: ../inc/class-easy-donations-admin-general.php:455
+#: ../inc/class-easy-donations-admin-general.php:465
 msgid "Changes Saved."
 msgstr "تنظیمات دخیره شد."
 
-#: ../inc/class-easy-donations-admin-general.php:459
+#: ../inc/class-easy-donations-admin-general.php:469
 msgid "You have made no changes."
 msgstr "شما تغییری ایجاد ننموده اید."
 
-#: ../inc/class-easy-donations-admin-general.php:493
+#: ../inc/class-easy-donations-admin-general.php:503
 msgid "Albania Lek"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:497
+#: ../inc/class-easy-donations-admin-general.php:507
 msgid "Afghanistan Afghani"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:501
+#: ../inc/class-easy-donations-admin-general.php:511
 msgid "Argentina Peso"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:505
+#: ../inc/class-easy-donations-admin-general.php:515
 msgid "Aruba Guilder"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:509
+#: ../inc/class-easy-donations-admin-general.php:519
 msgid "Australia Dollar"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:513
+#: ../inc/class-easy-donations-admin-general.php:523
 msgid "Azerbaijan New Manat"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:517
+#: ../inc/class-easy-donations-admin-general.php:527
 msgid "Bahamas Dollar"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:521
+#: ../inc/class-easy-donations-admin-general.php:531
 msgid "Barbados Dollar"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:525
+#: ../inc/class-easy-donations-admin-general.php:535
 msgid "Belarus Ruble"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:529
+#: ../inc/class-easy-donations-admin-general.php:539
 msgid "Belize Dollar"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:533
+#: ../inc/class-easy-donations-admin-general.php:543
 msgid "Bermuda Dollar"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:537
+#: ../inc/class-easy-donations-admin-general.php:547
 msgid "Bolivia Boliviano"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:541
+#: ../inc/class-easy-donations-admin-general.php:551
 msgid "Bosnia and Herzegovina Convertible Marka"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:545
+#: ../inc/class-easy-donations-admin-general.php:555
 msgid "Botswana Pula"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:549
+#: ../inc/class-easy-donations-admin-general.php:559
 msgid "Bulgaria Lev"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:553
+#: ../inc/class-easy-donations-admin-general.php:563
 msgid "Brazil Real"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:557
+#: ../inc/class-easy-donations-admin-general.php:567
 msgid "Brunei Darussalam Dollar"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:561
+#: ../inc/class-easy-donations-admin-general.php:571
 msgid "Cambodia Riel"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:565
+#: ../inc/class-easy-donations-admin-general.php:575
 msgid "Canada Dollar"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:569
+#: ../inc/class-easy-donations-admin-general.php:579
 msgid "Cayman Islands Dollar"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:573
+#: ../inc/class-easy-donations-admin-general.php:583
 msgid "Chile Peso"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:577
+#: ../inc/class-easy-donations-admin-general.php:587
 msgid "China Yuan Renminbi"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:581
+#: ../inc/class-easy-donations-admin-general.php:591
 msgid "Colombia Peso"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:585
+#: ../inc/class-easy-donations-admin-general.php:595
 msgid "Costa Rica Colon"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:589
+#: ../inc/class-easy-donations-admin-general.php:599
 msgid "Croatia Kuna"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:593
+#: ../inc/class-easy-donations-admin-general.php:603
 msgid "Cuba Peso"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:597
+#: ../inc/class-easy-donations-admin-general.php:607
 msgid "Czech Republic Koruna"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:601
+#: ../inc/class-easy-donations-admin-general.php:611
 msgid "Denmark Krone"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:605
+#: ../inc/class-easy-donations-admin-general.php:615
 msgid "Dominican Republic Peso"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:609
+#: ../inc/class-easy-donations-admin-general.php:619
 msgid "East Caribbean Dollar"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:613
+#: ../inc/class-easy-donations-admin-general.php:623
 msgid "Egypt Pound"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:617
+#: ../inc/class-easy-donations-admin-general.php:627
 msgid "El Salvador Colon"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:621
+#: ../inc/class-easy-donations-admin-general.php:631
 msgid "Estonia Kroon"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:625
+#: ../inc/class-easy-donations-admin-general.php:635
 msgid "Euro Member Countries"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:629
+#: ../inc/class-easy-donations-admin-general.php:639
 msgid "Falkland Islands (Malvinas) Pound"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:633
+#: ../inc/class-easy-donations-admin-general.php:643
 msgid "Fiji Dollar"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:637
+#: ../inc/class-easy-donations-admin-general.php:647
 msgid "Ghana Cedi"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:641
+#: ../inc/class-easy-donations-admin-general.php:651
 msgid "Gibraltar Pound"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:645
+#: ../inc/class-easy-donations-admin-general.php:655
 msgid "Guatemala Quetzal"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:649
+#: ../inc/class-easy-donations-admin-general.php:659
 msgid "Guernsey Pound"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:653
+#: ../inc/class-easy-donations-admin-general.php:663
 msgid "Guyana Dollar"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:657
+#: ../inc/class-easy-donations-admin-general.php:667
 msgid "Honduras Lempira"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:661
+#: ../inc/class-easy-donations-admin-general.php:671
 msgid "Hong Kong Dollar"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:665
+#: ../inc/class-easy-donations-admin-general.php:675
 msgid "Hungary Forint"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:669
+#: ../inc/class-easy-donations-admin-general.php:679
 msgid "Iceland Krona"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:673
+#: ../inc/class-easy-donations-admin-general.php:683
 msgid "India Rupee"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:677
+#: ../inc/class-easy-donations-admin-general.php:687
 msgid "Indonesia Rupiah"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:681
+#: ../inc/class-easy-donations-admin-general.php:691
 msgid "دینار عراق"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:685
+#: ../inc/class-easy-donations-admin-general.php:695
 msgid "ریال"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:689
-#: ../inc/class-easy-donations-form.php:126
+#: ../inc/class-easy-donations-admin-general.php:699
+#: ../inc/class-easy-donations-form.php:131
 #: ../inc/class-easy-donations-install.php:128
 msgid "تومان"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:693
+#: ../inc/class-easy-donations-admin-general.php:703
 msgid "Isle of Man Pound"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:697
+#: ../inc/class-easy-donations-admin-general.php:707
 msgid "Jamaica Dollar"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:701
+#: ../inc/class-easy-donations-admin-general.php:711
 msgid "Japan Yen"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:705
+#: ../inc/class-easy-donations-admin-general.php:715
 msgid "Jersey Pound"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:709
+#: ../inc/class-easy-donations-admin-general.php:719
 msgid "Kazakhstan Tenge"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:713
+#: ../inc/class-easy-donations-admin-general.php:723
 msgid "Korea (North) Won"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:717
+#: ../inc/class-easy-donations-admin-general.php:727
 msgid "Korea (South) Won"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:721
+#: ../inc/class-easy-donations-admin-general.php:731
 msgid "Kyrgyzstan Som"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:725
+#: ../inc/class-easy-donations-admin-general.php:735
 msgid "Laos Kip"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:729
+#: ../inc/class-easy-donations-admin-general.php:739
 msgid "Latvia Lat"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:733
+#: ../inc/class-easy-donations-admin-general.php:743
 msgid "Lebanon Pound"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:737
+#: ../inc/class-easy-donations-admin-general.php:747
 msgid "Liberia Dollar"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:741
+#: ../inc/class-easy-donations-admin-general.php:751
 msgid "Lithuania Litas"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:745
+#: ../inc/class-easy-donations-admin-general.php:755
 msgid "Macedonia Denar"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:749
+#: ../inc/class-easy-donations-admin-general.php:759
 msgid "Malaysia Ringgit"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:753
+#: ../inc/class-easy-donations-admin-general.php:763
 msgid "Mauritius Rupee"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:757
+#: ../inc/class-easy-donations-admin-general.php:767
 msgid "Mexico Peso"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:761
+#: ../inc/class-easy-donations-admin-general.php:771
 msgid "Mongolia Tughrik"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:765
+#: ../inc/class-easy-donations-admin-general.php:775
 msgid "Mozambique Metical"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:769
+#: ../inc/class-easy-donations-admin-general.php:779
 msgid "Namibia Dollar"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:773
+#: ../inc/class-easy-donations-admin-general.php:783
 msgid "Nepal Rupee"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:777
+#: ../inc/class-easy-donations-admin-general.php:787
 msgid "Netherlands Antilles Guilder"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:781
+#: ../inc/class-easy-donations-admin-general.php:791
 msgid "New Zealand Dollar"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:785
+#: ../inc/class-easy-donations-admin-general.php:795
 msgid "Nicaragua Cordoba"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:789
+#: ../inc/class-easy-donations-admin-general.php:799
 msgid "Nigeria Naira"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:793
+#: ../inc/class-easy-donations-admin-general.php:803
 msgid "Norway Krone"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:797
+#: ../inc/class-easy-donations-admin-general.php:807
 msgid "Oman Rial"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:801
+#: ../inc/class-easy-donations-admin-general.php:811
 msgid "Pakistan Rupee"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:805
+#: ../inc/class-easy-donations-admin-general.php:815
 msgid "Panama Balboa"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:809
+#: ../inc/class-easy-donations-admin-general.php:819
 msgid "Paraguay Guarani"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:813
+#: ../inc/class-easy-donations-admin-general.php:823
 msgid "Peru Nuevo Sol"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:817
+#: ../inc/class-easy-donations-admin-general.php:827
 msgid "Philippines Peso"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:821
+#: ../inc/class-easy-donations-admin-general.php:831
 msgid "Poland Zloty"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:825
+#: ../inc/class-easy-donations-admin-general.php:835
 msgid "Qatar Riyal"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:829
+#: ../inc/class-easy-donations-admin-general.php:839
 msgid "Romania New Leu"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:833
+#: ../inc/class-easy-donations-admin-general.php:843
 msgid "Russia Ruble"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:837
+#: ../inc/class-easy-donations-admin-general.php:847
 msgid "Saint Helena Pound"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:841
+#: ../inc/class-easy-donations-admin-general.php:851
 msgid "Serbia Dinar"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:845
+#: ../inc/class-easy-donations-admin-general.php:855
 msgid "Seychelles Rupee"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:849
+#: ../inc/class-easy-donations-admin-general.php:859
 msgid "Singapore Dollar"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:853
+#: ../inc/class-easy-donations-admin-general.php:863
 msgid "Solomon Islands Dollar"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:857
+#: ../inc/class-easy-donations-admin-general.php:867
 msgid "Somalia Shilling"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:861
+#: ../inc/class-easy-donations-admin-general.php:871
 msgid "South Africa Rand"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:865
+#: ../inc/class-easy-donations-admin-general.php:875
 msgid "Sri Lanka Rupee"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:869
+#: ../inc/class-easy-donations-admin-general.php:879
 msgid "Sweden Krona"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:873
+#: ../inc/class-easy-donations-admin-general.php:883
 msgid "Switzerland Franc"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:877
+#: ../inc/class-easy-donations-admin-general.php:887
 msgid "Suriname Dollar"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:881
+#: ../inc/class-easy-donations-admin-general.php:891
 msgid "Syria Pound"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:885
+#: ../inc/class-easy-donations-admin-general.php:895
 msgid "Taiwan New Dollar"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:889
+#: ../inc/class-easy-donations-admin-general.php:899
 msgid "Thailand Baht"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:893
+#: ../inc/class-easy-donations-admin-general.php:903
 msgid "Trinidad and Tobago Dollar"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:897
-#: ../inc/class-easy-donations-admin-general.php:901
+#: ../inc/class-easy-donations-admin-general.php:907
+#: ../inc/class-easy-donations-admin-general.php:911
 msgid "Turkey Lira"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:905
+#: ../inc/class-easy-donations-admin-general.php:915
 msgid "Tuvalu Dollar"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:909
+#: ../inc/class-easy-donations-admin-general.php:919
 msgid "Ukraine Hryvnia"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:913
+#: ../inc/class-easy-donations-admin-general.php:923
 msgid "United Kingdom Pound"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:917
+#: ../inc/class-easy-donations-admin-general.php:927
 msgid "United States Dollar"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:921
+#: ../inc/class-easy-donations-admin-general.php:931
 msgid "Uruguay Peso"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:925
+#: ../inc/class-easy-donations-admin-general.php:935
 msgid "Uzbekistan Som"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:929
+#: ../inc/class-easy-donations-admin-general.php:939
 msgid "Venezuela Bolivar"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:933
+#: ../inc/class-easy-donations-admin-general.php:943
 msgid "Viet Nam Dong"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:937
+#: ../inc/class-easy-donations-admin-general.php:947
 msgid "Yemen Rial"
 msgstr ""
 
-#: ../inc/class-easy-donations-admin-general.php:941
+#: ../inc/class-easy-donations-admin-general.php:951
 msgid "Zimbabwe Dollar"
 msgstr ""
 
@@ -742,40 +761,40 @@ msgstr "پرداخت ها"
 msgid "Payments List"
 msgstr "لیست پرداخت ها"
 
-#: ../inc/class-easy-donations-form.php:147
+#: ../inc/class-easy-donations-form.php:155
 msgid "Amount:"
 msgstr "مبلغ"
 
-#: ../inc/class-easy-donations-form.php:154
+#: ../inc/class-easy-donations-form.php:162
 msgid "Payout"
 msgstr "پرداخت"
 
-#: ../inc/class-easy-donations-form.php:232
+#: ../inc/class-easy-donations-form.php:243
 msgid "Please do not remove the form fields !"
 msgstr "لطفا فیلدهای فرم را حذف نکنید!"
 
-#: ../inc/class-easy-donations-form.php:239
+#: ../inc/class-easy-donations-form.php:250
 msgid " is required"
 msgstr " الزامی است"
 
-#: ../inc/class-easy-donations-form.php:250
+#: ../inc/class-easy-donations-form.php:261
 msgid "Amount is required"
 msgstr "مبلغ الزامیست"
 
-#: ../inc/class-easy-donations-form.php:257
+#: ../inc/class-easy-donations-form.php:268
 msgid "Amount is numeric !!!"
 msgstr "مبلغ یک مقدار عددی می باشد."
 
-#: ../inc/class-easy-donations-form.php:263
+#: ../inc/class-easy-donations-form.php:274
 msgid "Please choose a gateway"
 msgstr "یک درگاه پرداخت انتخاب نمایید."
 
-#: ../inc/class-easy-donations-form.php:480
+#: ../inc/class-easy-donations-form.php:348
 msgid "Gateway:"
 msgstr "درگاه پرداخت "
 
-#: ../inc/class-easy-donations-form.php:482
-#: ../inc/class-easy-donations-form.php:500
+#: ../inc/class-easy-donations-form.php:350
+#: ../inc/class-easy-donations-form.php:368
 msgid "There is no active gateways."
 msgstr "هیچ درگاه فعالی موجود نیست."
 
@@ -852,6 +871,82 @@ msgstr "لغو شده"
 #: ../inc/class-easy-donations-payments.php:81
 msgid "Failed"
 msgstr "ناموفق"
+
+#: ../inc/gateways/class-edt-blockchain-gateway.php:51
+msgid "Your API Key"
+msgstr "کلید API "
+
+#: ../inc/gateways/class-edt-blockchain-gateway.php:51
+msgid "Click here to request one"
+msgstr "برای درخواست کلیک کنید"
+
+#: ../inc/gateways/class-edt-blockchain-gateway.php:58
+msgid ""
+"Your account xpub key. You can find it in your wallet. Do not share this key "
+"with others!"
+msgstr ""
+"کلید XPUB حسابتان. این کلید را می توانید در تنظیمات حسابتان بیابید. این کلید "
+"را نباید در اختیار کسی قرار دهید."
+
+#: ../inc/gateways/class-edt-blockchain-gateway.php:65
+msgid ""
+"Choose a secret key for transactions between you and blockchain. Blockchain "
+"uses this secret to tell you about the payment status, so it is better you "
+"use a strong secret key that contains uppercase and lowercase letters and "
+"numbers. I recommend you to not use any other characters."
+msgstr ""
+"یک عبارت که به راحتی قابل حدس زدن نباشد در این فیلد وارد نمایید. سعی کنید در "
+"این عبارت تنها از حروف لاتین کوچک ، بزرگ و اعداد استفاده نمایید. از این کلید "
+"برای اطمینان از اینکه blockchain دارد با سایت شما ارتباط برقرا می کند، "
+"استفاده می شود."
+
+#: ../inc/gateways/class-edt-blockchain-gateway.php:69
+#: ../inc/gateways/class-edt-blockchain-gateway.php:128
+msgid "Blockchain"
+msgstr ""
+
+#: ../inc/gateways/class-edt-blockchain-gateway.php:91
+msgid "Your request is set. Please send the price to this blockchain address: "
+msgstr "درخواست شما ثبت شد. لطفا مبلغ را به این آدرس انتقال دهید: "
+
+#: ../inc/gateways/class-edt-blockchain-gateway.php:95
+#: ../inc/gateways/class-edt-blockchain-gateway.php:100
+msgid ""
+"Unable to get an payment address from Blockchain. Resubmit the form or tell "
+"the site owner about the issue !"
+msgstr ""
+"قادر به دریافت آدرس پرداخت از Blockchain نیستیم. فرم را مجددا ثبت نمایید و "
+"یا مدیر سایت را از این موضوع مطلع نمایید."
+
+#: ../inc/gateways/class-edt-perfectmoney-gateway.php:34
+msgid "Payee Account"
+msgstr ""
+
+#: ../inc/gateways/class-edt-perfectmoney-gateway.php:41
+msgid "Payee Name"
+msgstr ""
+
+#: ../inc/gateways/class-edt-perfectmoney-gateway.php:48
+msgid "Alternate PassPhrase"
+msgstr ""
+
+#: ../inc/gateways/class-edt-perfectmoney-gateway.php:52
+#: ../inc/gateways/class-edt-perfectmoney-gateway.php:141
+msgid "Perfect Money"
+msgstr ""
+
+#: ../inc/gateways/class-edt-perfectmoney-gateway.php:64
+msgid "Payment number : "
+msgstr ""
+
+#: ../inc/gateways/class-edt-perfectmoney-gateway.php:111
+#: ../inc/gateways/class-edt-perfectmoney-gateway.php:133
+msgid "Your Transaction Was Failed. You Can Try Paying Again."
+msgstr ""
+
+#: ../inc/gateways/class-edt-perfectmoney-gateway.php:127
+msgid "Your Transaction Was Successfull. Thank You."
+msgstr ""
 
 #: ../inc/widgets/class-easy-donations-widgets.php:17
 msgid "Easy Donations Widget"

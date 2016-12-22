@@ -1,5 +1,10 @@
 .edt-wrap {
+    box-sizing:border-box;
     margin: 0 0 0 15px;
+}
+
+.edt-wrap *, .edt-wrap *:before, .edt-wrap *:after{
+    box-sizing:border-box;
 }
 
 .edt-wrap td label {
@@ -29,4 +34,21 @@
 .successfull_payment_message {
     width: 500px;
     height: 200px;
+}
+
+.amount-price-block{
+    margin-bottom: 30px;
+    border: 2px solid #f9f9f9;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.custom-amount-field{
+    border: 2px solid #dedede;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    vertical-align: top;
+    width: 210px;
 }

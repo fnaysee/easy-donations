@@ -102,9 +102,27 @@ jQuery(document).ready(function ($) {
                 'name': $('.settings-name').val() + '[donate_form_amount_field][fixed][donate-amount-' + customeAmounts + '][value]',
                 'id': 'donate-amount-' + customeAmounts
             });
+
+            $('.cloned .amount-field-des').attr({
+                'name': $('.settings-name').val() + '[donate_form_amount_field][fixed][donate-amount-' + customeAmounts + '][des]',
+            });
+
+            $('.cloned .amount-field-symbol').attr({
+                'name': $('.settings-name').val() + '[donate_form_amount_field][fixed][donate-amount-' + customeAmounts + '][symbol]',
+            });
+
+            $('.cloned .amount-field-show-currency').attr({
+                'name': $('.settings-name').val() + '[donate_form_amount_field][fixed][donate-amount-' + customeAmounts + '][show-currency]',
+                'id': 'amount-field-show-currency-' + customeAmounts
+            });
+
+            $('.cloned .amount-field-show-currency-label').attr({
+                'for': 'amount-field-show-currency-' + customeAmounts
+            });
+
             $('.cloned .amount-field-value-label').attr({ 'for': 'donate-amount-' + customeAmounts });
 
-            $('.cloned').addClass('custome-amount-field').removeClass('cloned').removeClass('sample-amount-field');
+            $('.cloned').addClass('custom-amount-field').removeClass('cloned').removeClass('sample-amount-field');
 
             $('.last-price').val(customeAmounts);
             busy2 = false;

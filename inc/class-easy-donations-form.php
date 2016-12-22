@@ -5,7 +5,7 @@ defined( 'ABSPATH' ) OR exit;
  * Donate Form
  * 
  * @class Easy_Donations
- * @version 1.0
+ * @version 1.1
  */
 class Easy_Donations_Form extends Easy_Donations_Settings_API {
     
@@ -13,7 +13,7 @@ class Easy_Donations_Form extends Easy_Donations_Settings_API {
      * Holds plugin version
      * @var string
      */
-    const version = '1.0';
+    const version = '1.1';
     
     const messages_session = 'edt_form_messages';
     
@@ -30,7 +30,8 @@ class Easy_Donations_Form extends Easy_Donations_Settings_API {
     public function __construct(){
 
         add_action( 'init', array( $this, 'set_donation_fields' ), 9 );
-        //$this->set_donation_fields();
+
+        add_action( 'wp_enqueue_scripts', array( $this, 'register_scripts' ));
         
         add_shortcode( 'EasyDonations', array( $this, 'do_short_code' ) );
 
@@ -39,6 +40,10 @@ class Easy_Donations_Form extends Easy_Donations_Settings_API {
         if( isset( $_POST['easy_donations_form'] ) && $_POST['easy_donations_form'] == '1' ) {
             add_action( 'init', array( $this, 'validate_form' ), 10 );
         }
+    }
+
+    public function register_scripts() {
+        wp_register_style('edt-form-styles', EASYDONATIONS_PLUGIN_URL . 'assets/css/form-styles.css' );
     }
     
     public function add_message( $message, $type, $from = null ) {
@@ -110,7 +115,7 @@ class Easy_Donations_Form extends Easy_Donations_Settings_API {
         }
         self::$form_fields = $temp;
         foreach( $temp as $item ) {
-            self::$fields_html[] = "<div><label class='edt-title' for='{$item['field']['id']}'>{$item['title']}</label><span class='the-fields'>" . $this->get_a_form_field( $item['field'] ) . "</span></div>";
+            self::$fields_html[] = "<div class='form-custom-field'><label class='edt-title' for='{$item['field']['id']}'>{$item['title']}</label><span class='the-fields'>" . $this->get_a_form_field( $item['field'] ) . "</span></div>";
         }
         
         return apply_filters( "edt_donate_form_fields", self::$fields_html );
@@ -128,7 +133,10 @@ class Easy_Donations_Form extends Easy_Donations_Settings_API {
             if( $amount_field['type'] == 'fixed' ) {
                 $amounts = "<div class='amount-field'><label class='edt-title' for='donation-amount'>" . __( 'Amount', EDT_TEXT_DOMAIN ) . "&nbsp;&nbsp;</label><div class='donate-prices' >";
                 foreach( $amount_field['fixed'] as $amount ) {
-                    $amount['text'] = "<label for='{$amount['id']}'>" . $amount['value'] . '<span class="currency">' . $active_currency['Title'] . "</span></label>";
+                    $amount['text'] = "<label for='{$amount['id']}'><span class='value'>" . $amount['value'] . "</span>" . ( isset($amount['show-currency'])? "<span class='currency'>" . $active_currency['Code'] . "</span>" : ''  ) . ( isset($amount['symbol'])? "<span class='symbol'>" . $amount['symbol'] . "</span>" : '' ) . (isset($amount['des'])? "<span class='description'>" . $amount['des'] . "</span>" : '') . "</label>";
+                    
+                    $amount['text'] = apply_filters('edt-amount-field-text', $amount['text'], $amount, $active_currency);
+                    
                     $amount['name'] = 'donate-amount';
                     $amounts .= $this->get_a_form_field( $amount );
                 }
@@ -168,6 +176,9 @@ class Easy_Donations_Form extends Easy_Donations_Settings_API {
     }
     
     public function easy_donations_form() {
+
+        wp_enqueue_style('edt-form-styles');
+
         $this->form_styles();
         
         $is_success_payment = false;
@@ -290,150 +301,7 @@ class Easy_Donations_Form extends Easy_Donations_Settings_API {
         
         ?>
         <style type="text/css">
-
             <?php echo $wrapper_styles; ?>
-
-            #edt-form-wrap { 
-                display: block;
-                padding: 20px;
-            }
-            .easy-donations-form{
-                width: 70%;
-                margin: 0 auto;
-                padding: 20px;
-                background-color: rgba(255, 255, 255, 0.8);
-                box-shadow: 0 0 4px #fff;
-                border-radius: 6px;
-                border: 1px solid #ccc;
-            }
-
-            #edt-form-wrap label{
-                margin-bottom:10px;
-            }
-            
-            #edt-form-wrap .edt-title{
-                width: 130px;
-                display:inline-block;
-                color: #000;
-                vertical-align: top;
-                margin-top: 5px;
-                font-weight: bold;
-            }
-
-            #edt-form-wrap input{
-                border-radius: 6px;
-            }
-
-            #edt-form-wrap textarea{
-                margin-bottom:10px;
-                width: 180px;
-            }
-
-            #edt-form-wrap .the-fields{
-                display: inline-block;
-                width: 180px;
-            }
-
-            #edt-form-wrap .the-fields input{
-                width: 130px;
-                display: inline-block;
-                border: 1px solid #ccc;
-            }
-
-            #edt-form-wrap .the-fields input:focus{
-                box-shadow: 0px 0px 3px #C0A220;
-            }
-
-            #edt-form-wrap input, #edt-form-wrap textarea{
-                background-color: rgba(255, 255, 255, 0.62);
-            }
-
-            .gateway-title{
-                font-weight: bold;
-            }
-
-            #edt-form-wrap .gateway-item{
-                margin-top: 5px;
-                margin-right: 10px;
-            }
-
-            #edt-form-wrap .gateway-item input{
-                margin-left:10px;
-            }
-
-            #edt-form-wrap .pay-btn{
-                margin-top: 20px;
-            }
-
-            #edt-form-wrap input.donate-form-submit{
-                margin: 0px auto;
-                display: block;
-                font-size: 20px;
-                background-color: rgb(192, 162, 32);
-                background-image: none;
-                color: rgb(255, 255, 255);
-                box-shadow: none;
-                border: none;
-            }
-
-            #edt-form-wrap .donate-form-submit:hover{
-                background: transparent -moz-linear-gradient(center top , #A8A0A0 0px, #756E6E 100%) repeat scroll 0% 0% !important;
-            }
-
-            #edt-form-wrap .edt_messages {
-                margin-bottom: 10px;
-            }
-
-                #edt-form-wrap .edt_messages .error, #edt-form-wrap .edt_messages .updated {
-                padding: 2px 4px;
-                margin-bottom: 2px;
-                background-color: rgba(255, 255, 255, 0.62);
-                
-                }
-
-                <?php if( is_rtl() ): ?> 
-                #edt-form-wrap .edt_messages .error {
-                    border-right: 2px solid rgb(170, 73, 73);
-                    display: block;
-                }
-
-                #edt-form-wrap .edt_messages .updated {
-                    border-right: 2px solid rgb(71, 170, 145);
-                    display: block;
-                }
-                <?php else:  ?>
-                #edt-form-wrap .edt_messages .error {
-                    border-right: 2px solid rgb(170, 73, 73);
-                    display: block;
-                }
-
-                #edt-form-wrap .edt_messages .updated {
-                    border-right: 2px solid rgb(71, 170, 145);
-                    display: block;
-                }
-                <?php endif;  ?>
-            
-            .amount-field{
-                margin: 15px 0;
-            }
-
-            #edt-form-wrap .the-fields .amount-text-field{
-                width: 60px;
-            }            
-
-            .donate-prices {
-                width: 100px;
-                display: inline-block;
-            }
-
-            .donate-prices input {
-                margin-left: 5px;
-            }
-
-            .donate-prices .currency {
-                margin-right: 3px;
-            }
-
             <?php echo edt_ins()->options->get_option( 'form_custome_styles' ); ?>
         </style>
         <?php

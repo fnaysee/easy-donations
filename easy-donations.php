@@ -176,7 +176,7 @@ function edt_ins() {
 
 edt_ins();
 
-/*
+/**
  * Prints the plugin form
  */
 function the_easy_donations_form(){

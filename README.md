@@ -42,60 +42,55 @@ Plugin is ideal for those who need a simple editable payment form.
 * Blockchain gateway added
 
 ###1.3.3
-<ul>
-<li>Fixed bug return url for some websites</li>
-<li>Added perfectmoney payment gateway</li>
-</ul>
+
+*Fixed bug return url for some websites
+*Added perfectmoney payment gateway
+
 
 ###1.3.2
-<ul>
-<li>Fixed bug on form required fields</li>
-<li>Translations updated</li>
-</ul>
+
+* Fixed bug on form required fields
+* Translations updated
+
 
 ###1.3.1
-<ul>
-<li>Fixed bug on add field and add price field buttons</li>
-</ul>
+
+* Fixed bug on add field and add price field buttons
 
 ###1.3
-<ul>
-<li>added option to show message or form after successfull payment</li>
-<li>from this version if only one gateway is active it becomes selected by default</li>
-<li>edited form styles</li>
-<li>resolved problem that when user changes the tab in settings it was going to the first tab after saving changes.</li>
-</ul>
+
+* added option to show message or form after successfull payment
+* from this version if only one gateway is active it becomes selected by default
+* edited form styles
+* resolved problem that when user changes the tab in settings it was going to the first tab after saving changes.
 
 ###1.2.1
-<ul>
-<li>password field added</li>
-</ul>
+
+* password field added
 
 ###1.2
-<ul>
-<li>added widget to the plugin</li>
-</ul>
+
+* added widget to the plugin
 
 ###1.1
-<ul>
-<li>Resolved problem on overwriting user data session when user submits a form twice.</li>
-<li>Added gateway name to payments log list.</li>
-<li>Updated translations.</li>
-</ul>
+
+* Resolved problem on overwriting user data session when user submits a form twice.
+* Added gateway name to payments log list.
+* Updated translations.
 
 ## Installation
 
 ### HOW TO INSTALL
-<li>extratc plugin files</li>
-<li>copy folder easy-donations into wordpress plugins folder which is located in : yourdomain/wp-content/plugins
-or after downloading the plugin go to wordpress dashboard and navigate to plugins > installed plugins , then from top click Add New button , in next page press upload , select the file and press Install Now.</li>
+* Extract plugin files
+* copy folder easy-donations into wordpress plugins folder which is located in : yourdomain/wp-content/plugins
+or after downloading the plugin go to wordpress dashboard and navigate to plugins > installed plugins , then from top click Add New button , in next page press upload , select the file and press Install Now.
 
 ### HOW TO ACTIVATE
-<li>go to wordpress dashboard and navigate to plugins > installed plugins , from tab All or Inactive find the "Easy Donations" and below the title press Activate.</li>
-<li>wait until wordpress shows a box containing plugin activated.</li>
+* Navigate to wordpress dashboard and navigate to plugins > installed plugins , from tab All or Inactive find the "Easy Donations" and below the title press Activate.
+* wait until wordpress shows a box containing plugin activated.
 
 ### HOW TO USE
-<li>Call the plugin short code into your pages or call its function in any place at your theme files.</li>
+* Call the plugin short code into your pages or call its function in any place at your theme files.
 
 
 

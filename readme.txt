@@ -14,6 +14,8 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Easy Donations lets you receive doations from your visitors.
 Plugin designed for those who need a simple form to receive money from their visitors. For more complex form maker systems you may use sth like gravityforms or quforms.
 <br />
+Please report plugin issues to this github repo:
+<a href="https://github.com/wp-src/easy-donations">https://github.com/wp-src/easy-donations</a>
 
 <br />
 <h5>Features:</h5>

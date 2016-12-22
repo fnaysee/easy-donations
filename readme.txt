@@ -1,5 +1,4 @@
-# easy-donations
-
+﻿=== Easy Donations ===
 Contributors: wp-src.ir Team
 Tags: donate, donation, حمایت, حمایت مالی, payment, gateway,form
 Donate link: wp-src.ir

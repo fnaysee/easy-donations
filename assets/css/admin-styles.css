@@ -1,0 +1,32 @@
+.edt-wrap {
+    margin: 0 0 0 15px;
+}
+
+.edt-wrap td label {
+    font-size: 14px !important
+}
+
+.form-back-img-wrap {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.form-back-img {
+    display: block;
+    text-align: center;
+}
+
+.sample-field, .sample-amount-field {
+    display: none;
+}
+
+.custome-styles {
+    width: 500px;
+    height: 400px;
+    direction: ltr;
+}
+
+.successfull_payment_message {
+    width: 500px;
+    height: 200px;
+}

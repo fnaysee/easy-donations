@@ -1,4 +1,4 @@
-# easy-donations
+# Easy Donations
 
 ## Description
 <h3>Easily receive Donations in your wordpress website</h3>

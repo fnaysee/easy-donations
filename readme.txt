@@ -35,6 +35,7 @@ Please report plugin issues to this github repo:
 <li>PerfectMoney (international)</li>
 <li>Pardakhtpal (iran)</li>
 <li>Pardakhtshahr (iran)</li>
+<li>Bitpay (iran)</li>
 </ol>
 
 افزونه ای جهت دریافت حمایت مالی در وردپرس .
@@ -42,9 +43,14 @@ Please report plugin issues to this github repo:
 توسط این افزونه به راحتی می توانید از کاربرانتان وجوه تعیین شده و یا حمایت مالی را دریافت نمایید.
 توسط شورت کد افزونه و تابع فراخوان فرم می توانید فرم را در هر مکانی از وب سایتتان نمایش دهید.
 
-    درگاه های موجود در افزونه: پرداخت پال ،شهر پرداخت  و پرفکت مانی
+    درگاه های موجود در افزونه: پرداخت پال، شهر پرداخت، بیت پی و پرفکت مانی
 
 == Changelog ==
+
+1.4.1
+<ul>
+<li>Bitpay gateway added</li>
+</ul>
 
 1.4
 <ul>

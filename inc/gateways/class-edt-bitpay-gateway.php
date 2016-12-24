@@ -24,7 +24,7 @@ function run_edt_bitpay_gateway() {
              * 
              */
             public function gateway_settings_fields() {
-                $gateway_id = 'edt_pl_gateway';
+                $gateway_id = 'edt_bitpay_gateway';
                 $gtw_data = edt_ins()->options->get_option( $gateway_id );
                 $setting_fields = array(
                             array(
@@ -131,7 +131,7 @@ function run_edt_bitpay_gateway() {
                 }
                 
                 
-                $gtw_data = edt_ins()->options->get_option( 'edt_pl_gateway' );
+                $gtw_data = edt_ins()->options->get_option( 'edt_bitpay_gateway' );
                 if( isset( $gtw_data['bitpay_test_mode'] ) ) 
                     $api = 'adxcv-zzadq-polkjsad-opp13opoz-1sdf455aadzmck1244567';
                 else {

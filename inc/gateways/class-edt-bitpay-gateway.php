@@ -31,18 +31,18 @@ function run_edt_bitpay_gateway() {
                                 'id'      => 'bitpay_api',
                                 'name'    => '[bitpay_api]',
                                 'type'    => 'text',
-                                'text'    => '˜Ï API ÏÑíÇÝÊí ÇÒ ÈíÊ í ÑÇ æÇÑÏ äãÇííÏ.',
+                                'text'    => 'Ú©Ø¯ API Ø¯Ø±ÛŒØ§ÙØªÛŒ Ø§Ø² Ø¨ÛŒØª Ù¾ÛŒ Ø±Ø§ ÙˆØ§Ø±Ø¯ Ù†Ù…Ø§ÛŒÛŒØ¯.',
                                 'value'   => ( isset( $gtw_data['bitpay_api'] ) ) ? $gtw_data['bitpay_api'] : ''
                             ),
                             array(
                                 'name'    => '[bitpay_test_mode]',
                                 'type'    => 'checkbox',
                                 'value'   => 'active',
-                                'text'    => 'ÈÑÇí ÂÒãÇíÔ ÏÑÇå ÈíÊ í Çíä Òíäå ÑÇ ÝÚÇá äãÇííÏ.',
+                                'text'    => 'Ø¨Ø±Ø§ÛŒ Ø¢Ø²Ù…Ø§ÛŒØ´ Ø¯Ø±Ú¯Ø§Ù‡ Ø¨ÛŒØª Ù¾ÛŒ Ø§ÛŒÙ† Ú¯Ø²ÛŒÙ†Ù‡ Ø±Ø§ ÙØ¹Ø§Ù„ Ù†Ù…Ø§ÛŒÛŒØ¯.',
                                 'checked' => ( isset( $gtw_data['bitpay_test_mode'] ) ) ? true : false
                             )
                         );
-                $this->add_gtw_setting( $gateway_id, 'ÈíÊ í', $setting_fields );
+                $this->add_gtw_setting( $gateway_id, 'Ø¨ÛŒØª Ù¾ÛŒ', $setting_fields );
                 
             }
             
@@ -84,22 +84,22 @@ function run_edt_bitpay_gateway() {
                 
                 switch( $res ) {
                     case '-1' :   
-                        $this->add_message( '˜Ï api ÇÑÓÇáí ÈÇ ˜Ï api ËÈÊ ÔÏå ÏÑ ÈíÊ í ÓÇÒÇÑ äíÓÊ.', 'error' );
+                        $this->add_message( 'Ú©Ø¯ api Ø§Ø±Ø³Ø§Ù„ÛŒ Ø¨Ø§ Ú©Ø¯ api Ø«Ø¨Øª Ø´Ø¯Ù‡ Ø¯Ø± Ø¨ÛŒØª Ù¾ÛŒ Ø³Ø§Ø²Ú¯Ø§Ø± Ù†ÛŒØ³Øª.', 'error' );
                         edt_ins()->payment->complete_payment( $payment, 'failed' );
                         wp_redirect( $payment['pay_url'] );        
                         die();
                     case '-2' :  
-                        $this->add_message( 'ãÈáÛ í˜ ãÞÏÇÑ ÚÏÏí ÇÓÊ æ ÍÏÇÞá ÈÇíÏ 1000 ÑíÇá ÈÇÔÏ.', 'error' );
+                        $this->add_message( 'Ù…Ø¨Ù„Øº ÛŒÚ© Ù…Ù‚Ø¯Ø§Ø± Ø¹Ø¯Ø¯ÛŒ Ø§Ø³Øª Ùˆ Ø­Ø¯Ø§Ù‚Ù„ Ø¨Ø§ÛŒØ¯ 1000 Ø±ÛŒØ§Ù„ Ø¨Ø§Ø´Ø¯.', 'error' );
                         edt_ins()->payment->complete_payment( $payment, 'failed' );
                         wp_redirect( $payment['pay_url'] );       
                         die();    
                     case '-3' : 
-                        $this->add_message( 'ÂÏÑÓ ÈÇÒÔÊ ÇÒ ÏÑÇå í˜ ãÞÏÇÑ äÇá ãí ÈÇÔÏ.', 'error' );
+                        $this->add_message( 'Ø¢Ø¯Ø±Ø³ Ø¨Ø§Ø²Ú¯Ø´Øª Ø§Ø² Ø¯Ø±Ú¯Ø§Ù‡ ÛŒÚ© Ù…Ù‚Ø¯Ø§Ø± Ù†Ø§Ù„ Ù…ÛŒ Ø¨Ø§Ø´Ø¯.', 'error' );
                         edt_ins()->payment->complete_payment( $payment, 'failed' );
                         wp_redirect( $payment['pay_url'] );       
                         die();    
                     case '-4' :
-                        $this->add_message( 'äíä ÏÑÇåí æÌæÏ äÏÇÑÏ æ íÇ åäæÒ ÏÑ ÇäÊÙÇÑ ÊÇííÏ ãí ÈÇÔÏ!', 'error' );
+                        $this->add_message( 'Ú†Ù†ÛŒÙ† Ø¯Ø±Ú¯Ø§Ù‡ÛŒ ÙˆØ¬ÙˆØ¯ Ù†Ø¯Ø§Ø±Ø¯ Ùˆ ÛŒØ§ Ù‡Ù†ÙˆØ² Ø¯Ø± Ø§Ù†ØªØ¸Ø§Ø± ØªØ§ÛŒÛŒØ¯ Ù…ÛŒ Ø¨Ø§Ø´Ø¯!', 'error' );
                         edt_ins()->payment->complete_payment( $payment, 'failed' );
                         wp_redirect( $payment['pay_url'] );
                         die();    
@@ -116,7 +116,7 @@ function run_edt_bitpay_gateway() {
                             die();
                         }
                         else {
-                            $this->add_message( 'ÎØÇ ÏÑ ÇÑÓÇá Èå ÈíÊ í', 'error' );
+                            $this->add_message( 'Ø®Ø·Ø§ Ø¯Ø± Ø§Ø±Ø³Ø§Ù„ Ø¨Ù‡ Ø¨ÛŒØª Ù¾ÛŒ', 'error' );
                             return;
                         }
                 }
@@ -139,7 +139,7 @@ function run_edt_bitpay_gateway() {
                 }
                 
                 if( ! isset( $post['trans_id'] ) || ! isset( $post['id_get'] ) ){
-                    $this->add_message( 'Èå äÙÑ ãí ÑÓÏ ÏÑÇå ÈíÊ í ÏÇÑ ãÔ˜áí ÔÏå æ íÇ ÞæÇÚÏ ÇÊÕÇá Èå ÏÑÇå ÊÛííÑ ˜ÑÏå áØÝÇ ãÓÆæá ÓÇíÊ ÑÇ ÇÒ Çíä ãæÖæÚ ãØáÚ äãÇííÏ.', 'error' );
+                    $this->add_message( 'Ø¨Ù‡ Ù†Ø¸Ø± Ù…ÛŒ Ø±Ø³Ø¯ Ø¯Ø±Ú¯Ø§Ù‡ Ø¨ÛŒØª Ù¾ÛŒ Ø¯Ú†Ø§Ø± Ù…Ø´Ú©Ù„ÛŒ Ø´Ø¯Ù‡ Ùˆ ÛŒØ§ Ù‚ÙˆØ§Ø¹Ø¯ Ø§ØªØµØ§Ù„ Ø¨Ù‡ Ø¯Ø±Ú¯Ø§Ù‡ ØªØºÛŒÛŒØ± Ú©Ø±Ø¯Ù‡ Ù„Ø·ÙØ§ Ù…Ø³Ø¦ÙˆÙ„ Ø³Ø§ÛŒØª Ø±Ø§ Ø§Ø² Ø§ÛŒÙ† Ù…ÙˆØ¶ÙˆØ¹ Ù…Ø·Ù„Ø¹ Ù†Ù…Ø§ÛŒÛŒØ¯.', 'error' );
                     edt_ins()->payment->complete_payment( $payment, 'failed' );
                     wp_redirect( $payment['pay_url'] );
                     die();
@@ -158,27 +158,27 @@ function run_edt_bitpay_gateway() {
                 
                 switch( $res ) {
                     case '-1' :   
-                        $this->add_message( '˜Ï api ÇÑÓÇáí ÈÇ ˜Ï api ËÈÊ ÔÏå ÏÑ ÈíÊ í ÓÇÒÇÑ äíÓÊ.', 'error' );
+                        $this->add_message( 'Ú©Ø¯ api Ø§Ø±Ø³Ø§Ù„ÛŒ Ø¨Ø§ Ú©Ø¯ api Ø«Ø¨Øª Ø´Ø¯Ù‡ Ø¯Ø± Ø¨ÛŒØª Ù¾ÛŒ Ø³Ø§Ø²Ú¯Ø§Ø± Ù†ÛŒØ³Øª.', 'error' );
                         edt_ins()->payment->complete_payment( $payment, 'failed' );
                         wp_redirect( $payment['pay_url'] );        
                         die();
                     case '-2' :  
-                        $this->add_message( 'ÔãÇÑå ÊÑÇ˜äÔ ÇÑÓÇáí äÇãÚÊÈÑ ÇÓÊ.', 'error' );
+                        $this->add_message( 'Ø´Ù…Ø§Ø±Ù‡ ØªØ±Ø§Ú©Ù†Ø´ Ø§Ø±Ø³Ø§Ù„ÛŒ Ù†Ø§Ù…Ø¹ØªØ¨Ø± Ø§Ø³Øª.', 'error' );
                         edt_ins()->payment->complete_payment( $payment, 'failed' );
                         wp_redirect( $payment['pay_url'] );       
                         die();    
                     case '-3' : 
-                        $this->add_message( 'id_get ÇÑÓÇáí äÇãÚÊÈÑ ãí ÈÇÔÏ.', 'error' );
+                        $this->add_message( 'id_get Ø§Ø±Ø³Ø§Ù„ÛŒ Ù†Ø§Ù…Ø¹ØªØ¨Ø± Ù…ÛŒ Ø¨Ø§Ø´Ø¯.', 'error' );
                         edt_ins()->payment->complete_payment( $payment, 'failed' );
                         wp_redirect( $payment['pay_url'] );       
                         die();    
                     case '-4' :
-                        $this->add_message( 'äíä ÊÑÇ˜äÔí æÌæÏ äÏÇÑÏ æ íÇ ÞÈáÇ ÈÇ ãæÝÞíÊ Èå ÇÊãÇã ÑÓíÏå ÇÓÊ. åãäíä Çã˜Çä ÏÇÑÏ ÚãáíÇÊ ÑÏÇÎÊ ÊæÓØ ˜ÇÑÈÑ áÛæ ÔÏå ÈÇÔÏ.', 'error' );
+                        $this->add_message( 'Ú†Ù†ÛŒÙ† ØªØ±Ø§Ú©Ù†Ø´ÛŒ ÙˆØ¬ÙˆØ¯ Ù†Ø¯Ø§Ø±Ø¯ Ùˆ ÛŒØ§ Ù‚Ø¨Ù„Ø§ Ø¨Ø§ Ù…ÙˆÙÙ‚ÛŒØª Ø¨Ù‡ Ø§ØªÙ…Ø§Ù… Ø±Ø³ÛŒØ¯Ù‡ Ø§Ø³Øª. Ù‡Ù…Ú†Ù†ÛŒÙ† Ø§Ù…Ú©Ø§Ù† Ø¯Ø§Ø±Ø¯ Ø¹Ù…Ù„ÛŒØ§Øª Ù¾Ø±Ø¯Ø§Ø®Øª ØªÙˆØ³Ø· Ú©Ø§Ø±Ø¨Ø± Ù„ØºÙˆ Ø´Ø¯Ù‡ Ø¨Ø§Ø´Ø¯.', 'error' );
                         edt_ins()->payment->complete_payment( $payment, 'failed' );
                         wp_redirect( $payment['pay_url'] );
                         die();    
                     case '1' :
-                        $this->add_message( 'ÑÏÇÎÊ ÔãÇ ÈÇ ãæÝÞíÊ ÏÑíÇÝÊ ÔÏ.', 'updated' );
+                        $this->add_message( 'Ù¾Ø±Ø¯Ø§Ø®Øª Ø´Ù…Ø§ Ø¨Ø§ Ù…ÙˆÙÙ‚ÛŒØª Ø¯Ø±ÛŒØ§ÙØª Ø´Ø¯.', 'updated' );
                         edt_ins()->payment->complete_payment( $payment, 'completed', $trans_id );
                         wp_redirect( $payment['pay_url'] );       
                         die(); 
@@ -187,6 +187,6 @@ function run_edt_bitpay_gateway() {
             }
         }
         
-        edt_ins()->gateways->register_gateway( 'edt_bitpay_gateway', 'ÈíÊ í', 'EDT_bitpay_Gateway' );
+        edt_ins()->gateways->register_gateway( 'edt_bitpay_gateway', 'Ø¨ÛŒØª Ù¾ÛŒ', 'EDT_bitpay_Gateway' );
     }
 }

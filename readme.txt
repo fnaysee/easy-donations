@@ -47,6 +47,11 @@ Please report plugin issues to this github repo:
 
 == Changelog ==
 
+1.4.2
+<ul>
+<li>Fixed text encoding problem in bitpay gateway</li>
+</ul>
+
 1.4.1
 <ul>
 <li>Bitpay gateway added</li>

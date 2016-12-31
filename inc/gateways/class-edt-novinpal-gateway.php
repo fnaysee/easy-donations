@@ -6,7 +6,7 @@
 
 add_action( 'plugins_loaded', 'run_edt_novinpal_gateway' );
 
-function run_edt_psh_gateway() {
+function run_edt_novinpal_gateway() {
 
     if( ! class_exists( 'EDT_NovinPal_Gateway' ) && class_exists( 'Easy_Donations_Gateway' ) ) {
         

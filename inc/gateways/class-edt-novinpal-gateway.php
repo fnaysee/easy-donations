@@ -68,7 +68,7 @@ function run_edt_psh_gateway() {
                 $active_currency = edt_ins()->options->get_option( 'donate_form_active_currency' );
                 
                 if( $active_currency['Code'] == 'IRR' )
-                    $Amount = round($Amount / 10); // convert value to toman
+                    $Amount = round($Amount / 10); // Convert value to toman
                 
                 $Description = 'پرداخت فاکتور به شماره ی' . $payment['id']; // Required 
                 $CallbackURL =  edt_ins()->gateways->return_url( $payment['id'] );
@@ -131,6 +131,6 @@ function run_edt_psh_gateway() {
             }
         }
         
-        edt_ins()->gateways->register_gateway( 'edt_novinpal_gateway', 'شهر پرداخت', 'EDT_NovinPal_Gateway' );
+        edt_ins()->gateways->register_gateway( 'edt_novinpal_gateway', 'نوین پال', 'EDT_NovinPal_Gateway' );
     }
 }

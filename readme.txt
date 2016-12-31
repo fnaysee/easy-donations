@@ -1,15 +1,15 @@
 ﻿=== Easy Donations ===
 Contributors: wp-src.ir Team
-Tags: donate, donation, حمایت, حمایت مالی, payment, gateway,form
+Tags: donate, donation, حمایت, حمایت مالی, payment, gateway,form, perfectmoney, blockchain, پرداخت پال , پرداخت شهر , بیت پی , نوین پال
 Donate link: wp-src.ir
 Requires at least: wordpress 3.5
-Tested up to: 4.6.1
+Tested up to: 4.7
 Stable tag: 1.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 == Description ==
-<h5>Easily receive Donations in your wordpress website</h5>
+<h5>Easily receive Donations in your wordpress site</h5>
 <br />
 Easy Donations lets you receive doations from your visitors.
 Plugin designed for those who need a simple form to receive money from their visitors. For more complex form maker systems you may use sth like gravityforms or quforms.
@@ -33,9 +33,11 @@ Please report plugin issues to this github repo:
 <h5>Included Gateways:</h5>
 <ol>
 <li>PerfectMoney (international)</li>
+<li>Blockchain (international)</li>
 <li>Pardakhtpal (iran)</li>
 <li>Pardakhtshahr (iran)</li>
 <li>Bitpay (iran)</li>
+<li>Novinpal (iran)</li>
 </ol>
 
 افزونه ای جهت دریافت حمایت مالی در وردپرس .
@@ -43,9 +45,14 @@ Please report plugin issues to this github repo:
 توسط این افزونه به راحتی می توانید از کاربرانتان وجوه تعیین شده و یا حمایت مالی را دریافت نمایید.
 توسط شورت کد افزونه و تابع فراخوان فرم می توانید فرم را در هر مکانی از وب سایتتان نمایش دهید.
 
-    درگاه های موجود در افزونه: پرداخت پال، شهر پرداخت، بیت پی و پرفکت مانی
+    درگاه های موجود در افزونه: پرداخت پال، شهر پرداخت، بیت پی، نوین پال و پرفکت مانی
 
 == Changelog ==
+
+1.4.3
+<ul>
+<li>Novinpal gateway added</li>
+</ul>
 
 1.4.2
 <ul>

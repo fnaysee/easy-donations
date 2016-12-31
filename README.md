@@ -23,8 +23,11 @@ Plugin is ideal for those who need a simple editable payment form.
 ## Included Gateways:
 
 1. PerfectMoney (international)
+2. Blockchain (international)
 2. Pardakhtpal (iran)
 3. Pardakhtshahr (iran)
+4. Bitpay (iran)
+5. Novinpal (iran)
 
 ## Description (Persian)
 افزونه ای جهت دریافت حمایت مالی در وردپرس .
@@ -32,9 +35,17 @@ Plugin is ideal for those who need a simple editable payment form.
 توسط این افزونه به راحتی می توانید از کاربرانتان وجوه تعیین شده و یا حمایت مالی را دریافت نمایید.
 توسط شورت کد افزونه و تابع فراخوان فرم می توانید فرم را در هر مکانی از وب سایتتان نمایش دهید.
 
-    درگاه های موجود در افزونه: پرداخت پال ،شهر پرداخت  و پرفکت مانی
+    درگاه های موجود در افزونه: پرداخت پال ،شهر پرداخت ، بیت پی ، نوین پال ، بلاک چین و پرفکت مانی
     
 ## Changelog
+
+###1.4.3
+
+* Novinpal gateway added
+
+###1.4.2
+
+* Bitpay gateway added
 
 ###1.4
 

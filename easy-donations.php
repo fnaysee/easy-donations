@@ -4,7 +4,7 @@ defined( 'ABSPATH' ) OR exit;
  * Plugin Name: Easy Donations
  * Plugin URI: http://wp-src.ir
  * Description: Using this plugin you can let your users receives donations easily in their website
- * Version: 1.4.4
+ * Version: 1.4.3.1
  * Author: Farhan
  * Author URI: http://wp-src.ir
  */

@@ -86,7 +86,7 @@ function run_edt_novinpal_gateway() {
                     die();
                 }
                 else{
-                    $this->add_message( 'خطا در ارسال به ایسلند پی کد خطا:' . $res . ' علت آن به این شرح است: ' .  ((isset($this->errorCode[$res])) ? $this->errorCode[$res] : 'کد خطا قابل تفسیر نیست.' ), 'error' );
+                    $this->add_message( 'خطا در ارسال به نوین پال کد خطا:' . $res . ' علت آن به این شرح است: ' .  ((isset($this->errorCode[$res])) ? $this->errorCode[$res] : 'کد خطا قابل تفسیر نیست.' ), 'error' );
                     edt_ins()->payment->complete_payment( $payment, 'failed' );
                     header( "Location: {$payment['pay_url']}" );
                     return;
